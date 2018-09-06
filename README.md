@@ -1,24 +1,24 @@
 # Docker Debian Oracle Server JRE 10
-Docker Debian Slim image with cleaned Oracle Server JRE 10 Update 1 (239MB stretch)
+Docker Debian image with *Oracle Server JRE 10.0.2* (239MB)
 
 You must accept the [Oracle Binary Code License Agreement for Java SE](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) to use this image.
 
 ## Image
-Image contains cleaned [Oracle Server JRE 10.0.1](http://www.oracle.com/technetwork/java/javase/downloads/sjre10-downloads-4417025.html), you can read about JRE difference [here](https://stackoverflow.com/questions/33407297/difference-between-server-jre-and-client-jre). 
+Image contains cleaned [Oracle Server JRE 10.0.2](http://www.oracle.com/technetwork/java/javase/downloads/sjre10-downloads-4417025.html), you can read about JRE difference [here](https://stackoverflow.com/questions/33407297/difference-between-server-jre-and-client-jre). 
 JRE is provided without *desktop, sources* and other unnecessary stuff except JVM. 
 So image have all *JVM* parts to run *Java applications* in Docker containers.
 
 Image contains only Java Runtime Environment, so you must have compiled Java application.
 
-There such tags:
+Image Tags:
 
-#### *latest*
-* Uses base image [Debian Sid Slim](https://hub.docker.com/_/debian/) *(63.3MB)*
-* Image size with Server JRE *(254MB)*
-
-#### *stretch*
+#### *latest* or *stretch*
 * Uses base image [Debian Stretch Slim](https://hub.docker.com/_/debian/) *(55.3MB)*
 * Image size with Server JRE *(239MB)*
+
+#### *sid*
+* Uses base image [Debian Sid Slim](https://hub.docker.com/_/debian/) *(63.3MB)*
+* Image size with Server JRE *(254MB)*
 
 ## Usage
 Image have docker *USER* named **app** so you can use it for your application.
